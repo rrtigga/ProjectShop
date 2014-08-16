@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView android:id="@+id/full_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="375dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+        android:id="@+id/Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textSize="35sp"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+        <TextView
+        android:id="@+id/Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="M"
+            android:textSize="35sp"
+
+            android:layout_weight="1"
+        android:gravity="center"
+        />
+
+        <TextView
+            android:id="@+id/Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textSize="35sp"
+
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/XLarge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="XL"
+            android:textSize="35sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addtocart"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/purchasebutton"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

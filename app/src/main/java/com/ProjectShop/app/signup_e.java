@@ -1,12 +1,12 @@
 package com.ProjectShop.app;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.content.Intent;
-import android.view.View;
 /**
  * Created by Spicycurryman on 7/19/14.
  */
@@ -31,7 +31,7 @@ public class signup_e extends Activity {
 
     public void sendMsg(View view) {
         // Do something in response to button
-        Intent intent = new Intent(this, Country_Activity.class);
+        Intent intent = new Intent(this, GridView_ShirtM.class);
         startActivity(intent);
     }
 

@@ -1,8 +1,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity" >
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+
+
+
+    <item android:id="@+id/action_overflow"
         android:orderInCategory="100"
-        android:showAsAction="never" />
+        android:icon="@drawable/ic_action_overflow_gray"
+        app:showAsAction="always" >
+        <menu>
+
+            <item
+                android:id="@+id/setting_drop"
+                android:orderInCategory="100"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_settings_gray"
+                android:title="@string/action_settings"/>
+
+
+
+        </menu>
+    </item>
 </menu>
