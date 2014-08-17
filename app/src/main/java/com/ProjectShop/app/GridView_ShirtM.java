@@ -17,6 +17,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 import com.gridview.shirts.ImageAdapter;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 
 public class GridView_ShirtM extends Activity {
@@ -28,6 +29,15 @@ public class GridView_ShirtM extends Activity {
 
         GridView gridView = (GridView) findViewById(R.id.grid_view);
 
+        SlidingMenu menu = new SlidingMenu(this);
+        menu.setMode(SlidingMenu.LEFT);
+        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        menu.setShadowWidthRes(R.dimen.shadow_width);
+        menu.setShadowDrawable(R.drawable.shadow);
+        menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+        menu.setFadeDegree(0.35f);
+        menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+        menu.setMenu(R.layout.menu);
 
 
         SpannableString s = new SpannableString("ProjectShop");
