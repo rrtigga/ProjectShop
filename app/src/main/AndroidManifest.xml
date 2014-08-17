@@ -29,6 +29,8 @@
 
         <activity android:name="com.ProjectShop.app.ImageZoomActivity" >
         </activity>
+        
+        
     </application>
 
 </manifest>
