@@ -31,6 +31,8 @@ public class signup_e extends Activity {
 
     public void sendMsg(View view) {
         // Do something in response to button
+
+        //change back
         Intent intent = new Intent(this, GridView_ShirtM.class);
         startActivity(intent);
     }

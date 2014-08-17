@@ -5,6 +5,7 @@ package com.ProjectShop.app;
  */
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -15,16 +16,15 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-import com.gridview.shirts.ImageAdapter;
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivity;
+import com.gridview.shirts.ProjectImageAdapter;
 
 
-public class GridView_ShirtM extends SlidingActivity {
+public class ProjectGrid extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.grid_layout);
+        setContentView(R.layout.projectgrid);
 
         GridView gridView = (GridView) findViewById(R.id.grid_view);
 
@@ -40,7 +40,7 @@ public class GridView_ShirtM extends SlidingActivity {
         actionBar.setTitle(s);
 
         // Instance of ImageAdapter Class
-        gridView.setAdapter(new ImageAdapter(this));
+        gridView.setAdapter(new ProjectImageAdapter(this));
 
         /**
          * On Click event for Single Gridview Item
@@ -51,7 +51,7 @@ public class GridView_ShirtM extends SlidingActivity {
                                     int position, long id) {
 
                 // Sending image id to FullScreenActivity
-                Intent i = new Intent(getApplicationContext(), ImageZoomActivity.class);
+                Intent i = new Intent(getApplicationContext(), ProjectZoomActivity.class);
                 // passing array index
                 i.putExtra("id", position);
                 startActivity(i);

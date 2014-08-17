@@ -5,36 +5,20 @@ package com.gridview.shirts;
  */
 
 import android.content.Context;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.ProjectShop.app.R;
 
-public class ImageAdapter extends BaseAdapter {
+public class ProjectImageAdapter extends BaseAdapter {
     private Context mContext;
 
     // Keep all Images in array
-    public Integer[] mThumbIds = {
-            R.drawable.tshirt1, R.drawable.tshirt2,
-            R.drawable.tshirt3, R.drawable.tshirt4,
-            R.drawable.tshirt5, R.drawable.tshirt6,
-            R.drawable.tshirt7, R.drawable.tshirt8,
-            R.drawable.tshirt9, R.drawable.tshirt10,
-            R.drawable.tshirt11, R.drawable.tshirt12,
-
-    };
-
-    public Integer[] mLargeThumbIds = {
-            R.drawable.cooltshirt1, R.drawable.cooltshirt2,
-            R.drawable.cooltshirt3, R.drawable.cooltshirt4,
-            R.drawable.cooltshirt5, R.drawable.cooltshirt6,
-            R.drawable.cooltshirt7, R.drawable.cooltshirt8,
-            R.drawable.cooltshirt9, R.drawable.cooltshirt10,
-            R.drawable.cooltshirt11, R.drawable.cooltshirt12,
-
-    };
 
     public Integer[] mProjectArray = {
             R.drawable.beach, R.drawable.afterschool,
@@ -43,25 +27,28 @@ public class ImageAdapter extends BaseAdapter {
 
 
     };
+
     public String[] mProjectStringArray = {
             "Ocean Beach Cleanup in San Francisco", "New After-School Programs for SF Elementary Schools",
             "Cancer Research Fund in UCSF", "Organic Coffee Shop", "Opening a Guitar Shop on Market Street"
             , "Family Naan"
     };
+
     // Constructor
-    public ImageAdapter(Context c){
+    public ProjectImageAdapter(Context c){
         mContext = c;
     }
 
     @Override
     public int getCount() {
-        return mThumbIds.length;
+        return mProjectArray.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return mThumbIds[position];
+        return mProjectArray[position];
     }
+
 
     @Override
     public long getItemId(int position) {
@@ -70,11 +57,23 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        LayoutInflater inflater = LayoutInflater.from(mContext);
+        View v = inflater.inflate(R.layout.textview_project, parent, false);
+
         ImageView imageView = null;
+        TextView textView = null;
         if(convertView == null) {
             imageView = new ImageView(mContext);
+
             imageView.setMaxHeight(400);
-            imageView.setImageResource(mThumbIds[position]);
+            imageView.setImageResource(mProjectArray[position]);
+            try {
+                textView.setText(mProjectStringArray[position]);
+            }
+            catch(Exception e){
+                Log.e("exception", e.getMessage());
+            }
+
         }else{
             return convertView;
         }
