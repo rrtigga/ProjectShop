@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center" >
+        android:gravity="center"
+        android:id="@+id/">
 
       <!--  <TextView
             android:id="@+id/description"
@@ -25,6 +26,12 @@
             android:gravity="center"/>-->
 
 
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_weight="1"
+            android:indeterminate="false" />
     </LinearLayout>
 
 
@@ -37,7 +44,7 @@
 
 
         <Button
-            android:id= "@+id/purchasebutton"
+            android:id= "@+id/donateatoken"
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"

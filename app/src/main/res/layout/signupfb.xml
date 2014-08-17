@@ -8,6 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
 
+
     >
 
     <LinearLayout
@@ -52,7 +53,7 @@
             android:onClick="sendMsg"
             android:padding="10dp"
             android:layout_margin="4dp"
-            android:text="Sign Up"/>
+            android:text="Sign In"/>
 
     </LinearLayout>
 

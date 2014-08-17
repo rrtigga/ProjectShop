@@ -59,7 +59,7 @@
             android:background="#ffd60d1b"
             android:padding="10dp"
             android:layout_margin="4dp"
-            android:text="Sign Up"
+            android:text="Sign In"
             android:onClick="sendMsg"/>
     </LinearLayout>
 
