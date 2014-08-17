@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/orange"
+    android:id="@+id/">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bfd6d6d6"
+        android:padding="10dp"
+        android:hint="          Describe Your Project"
+        android:textColorHint="#ff040404"
+        android:textColor="#ff0b0b0b"
+
+        android:drawableLeft="@drawable/old_time_camera32"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+
+
+
+
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:background="@drawable/_createaftertouch"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_toEndOf="@+id/linearLayout2" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/button2"
+        android:background="@drawable/tags"
+
+        android:layout_above="@+id/button"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout2" />
+
+
+</RelativeLayout>

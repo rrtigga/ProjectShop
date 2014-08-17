@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView android:id="@+id/full_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="375dp"
+        android:background="@drawable/swag1"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+android:background="@drawable/shirtscolor"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+
+
+
+        <Button
+            android:id= "@+id/tags"
+
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tags"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+
+
+
+        <Button
+            android:id= "@+id/sellbutton"
+
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sell"/>
+    </LinearLayout>
+
+</LinearLayout>

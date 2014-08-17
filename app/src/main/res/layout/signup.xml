@@ -39,7 +39,7 @@
             android:textColor="#ff0b0b0b"
 
             android:textColorHint="#ff060606"
-            android:drawableLeft="@drawable/user"/>
+            android:drawableLeft="@drawable/user24"/>
         <EditText
             android:id="@+id/etPass"
             android:layout_width="match_parent"

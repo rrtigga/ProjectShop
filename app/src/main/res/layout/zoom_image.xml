@@ -29,9 +29,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="M"
-            android:textSize="35sp"
-
-            android:layout_weight="1"
+        android:textSize="35sp"
+        android:layout_weight="1"
         android:gravity="center"
         />
 
@@ -75,15 +74,5 @@
             android:layout_height="wrap_content"
             android:background="@drawable/purchasebutton"/>
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 
 </LinearLayout>
