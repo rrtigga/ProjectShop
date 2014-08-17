@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+
+    android:background="#ff3181ff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+<!--        <EditText
+            android:id="@+id/FirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bfd6d6d6"
+            android:padding="10dp"
+            android:hint="  First Name"
+            android:textColorHint="#ff040404"
+            android:textColor="#ff0b0b0b"
+
+            />
+        <EditText
+        android:id="@+id/LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bfd6d6d6"
+        android:padding="10dp"
+        android:hint="  Last name"
+        android:textColorHint="#ff040404"
+        android:textColor="#ff0b0b0b"
+
+            />-->
+
+        <Spinner
+            android:id="@+id/creditoptions"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bfd6d6d6"
+            android:padding="10dp"
+            android:hint="  Email"
+            android:textColorHint="#ff040404"
+            android:textColor="#ff0b0b0b"
+
+            android:drawableLeft="@drawable/email"/>
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:background="#bfd6d6d6"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint="  Card Number"
+            android:textColor="#ff0b0b0b"
+
+            android:textColorHint="#ff060606"
+            android:drawableLeft="@drawable/bank_card"/>
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bfd6d6d6"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint=" CVC"
+            android:textColorHint="#ff020202"
+            android:textColor="#ff0b0b0b"
+            android:password="true"
+            android:drawableLeft="@drawable/carduse"/>
+        <EditText
+            android:id="@+id/mmyy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bfd6d6d6"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint=" MM/YY"
+            android:textColorHint="#ff020202"
+            android:textColor="#ff0b0b0b"
+            android:password="true"
+            android:drawableLeft="@drawable/calendar"/>
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffd60d1b"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Submit"
+            android:onClick="sendMsg"/>
+    </LinearLayout>
+
+</RelativeLayout>
